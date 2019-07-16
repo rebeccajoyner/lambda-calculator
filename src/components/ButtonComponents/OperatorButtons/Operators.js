@@ -11,7 +11,7 @@ import {operators} from '../../../data';
 const Operators = () => {
   // STEP 2 - add the imported data to state
 
-  const [operators, setOperator] = useState(operators);
+  const [calcOperators, setOperator] = useState(operators);
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Operators = () => {
        it any props needed by the child component*/}
       
 
-{operators.map((operator, index) => <OperatorButton props={index} operator={operator} /> )};
+{calcOperators.map((operator, index) => <OperatorButton key={index} operator={operator} /> )};
 
 
 
@@ -29,3 +29,4 @@ const Operators = () => {
 };
 
 
+export default Operators;

@@ -10,7 +10,7 @@ import {specials} from '../../../data';
 const Specials = () => {
   // STEP 2 - add the imported data to state
 
-  const [specials, setSpecial] = useState(specials);
+  const [calcSpecials, setSpecial] = useState(specials);
 
 
   return (
@@ -19,7 +19,7 @@ const Specials = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       
-       {specials.map((special, index) => <SpecialButton props={index} special={special} />)};
+       {calcSpecials.map((special, index) => <SpecialButton key={index} special={special} />)};
 
 
 
@@ -27,4 +27,6 @@ const Specials = () => {
   );
 };
 
+
+export default Specials;
 

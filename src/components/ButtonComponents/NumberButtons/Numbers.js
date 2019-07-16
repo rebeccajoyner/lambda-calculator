@@ -12,7 +12,7 @@ import {numbers} from '../../../data';
 const Numbers = () => {
   // STEP 2 - add the imported data to state
 
-  const [numbers, setNumber] = useState(numbers);
+  const [calcNumbers, setNumber] = useState(numbers);
 
   return (
     <div>
@@ -23,8 +23,7 @@ const Numbers = () => {
 
       {/* state.map(numbers, index) => <ButtonComponents prop={bring in props here} /> */}
 
-       {numbers.map((number, index) => <NumberButton props ={index} number={number} /> )};
-
+       {calcNumbers.map((number, index) => <NumberButton key ={index} number={number} /> )};
 
 
 
@@ -33,3 +32,4 @@ const Numbers = () => {
 };
 
 
+export default Numbers;
