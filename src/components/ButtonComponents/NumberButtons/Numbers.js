@@ -23,7 +23,7 @@ const Numbers = () => {
 
       {/* state.map(numbers, index) => <ButtonComponents prop={bring in props here} /> */}
 
-       {calcNumbers.map((number, index) => <NumberButton key ={index} number={number} /> )};
+       {calcNumbers.map((number, index) => <NumberButton key ={index} number={number} /> )}
 
 
 

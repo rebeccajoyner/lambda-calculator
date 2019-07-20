@@ -1,11 +1,13 @@
 import React from "react";
 
-const Display = () => {
+
+
+const Display = (props) => {
   return (
-    <div>
+    <div className="display">
       
 
-
+    {props.number}
 
     </div>
 

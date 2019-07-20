@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./App.css";
+import "./App.scss";
 
 
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
@@ -28,21 +28,16 @@ function App() {
   const [displayValue, setDisplayValue] = useState("");
 
   const addNumber = (number) => {
-
     setDisplayValue(displayValue => displayValue + number);
-
   };
 
-
   const addOperator = (operator) => {
-  
     if (operator === "=") {
       setDisplayValue(displayValue => eval(displayValue));
     }
     else {
       setDisplayValue(displayValue => displayValue + " " + operator + " ");
     }
-
   };
 
 
@@ -59,11 +54,11 @@ function App() {
 
         <Display number={displayValue} />
 
-        <Numbers addNumber={addNumber}  />
+        <Numbers addNumber={addNumber} />
         
         <Specials />
         
-        <Operators addOperator={addOperator}  />
+        <Operators addOperator={addOperator} />
 
 
       </div>
