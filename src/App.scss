@@ -1,0 +1,72 @@
+
+.logo-container{
+
+    margin: 20px;
+    padding: 10px;
+    background: gray;
+}
+
+
+
+
+
+.App {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: maroon;
+    border: 5px groove gray;
+    height: 450px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+
+
+    div {
+
+        margin: 5px;
+        color: blue;
+        flex-wrap: wrap;
+     
+        
+        
+
+
+.number-button {
+
+    border: 2px solid royalblue;
+    margin: 2px;
+    border-radius: 77%;
+    font-size: 25px;
+    
+
+}
+
+.operator-button {
+
+    border: 2px solid orange;
+    border-radius: 77%;
+    margin: 2px;
+    font-size: 25px;
+
+    
+}
+
+.special-button {
+
+    border: 2px solid lightsteelblue;
+    border-radius: 77%;
+    margin: 2px;
+    font-size: 25px;
+
+
+
+}
+
+}
+
+}
